@@ -41,3 +41,24 @@ cardBefore.insertBefore(cardContent[3].offsetParent, cardContent[0].offsetParent
 
 const cardAfter = cardContent[1].offsetParent.parentElement;
 cardAfter.insertBefore(cardContent[2].offsetParent, cardContent[0].offsetParent.nextSibling);
+
+
+// Lista
+const listAll = document.querySelector(".list-group");
+const list = document.querySelectorAll(".list-group-item");
+
+list[0].classList.remove("active");
+
+const createList = document.createElement("li");
+const createTextList = document.createTextNode("Quarto item");
+createList.classList.add("list-group-item");
+createList.classList.add("active");
+createList.appendChild(createTextList);
+
+const createOtherList = document.createElement("li");
+const createOtherTextList = document.createTextNode("Quinto item");
+createOtherList.classList.add("list-group-item");
+createOtherList.appendChild(createOtherTextList);
+
+listAll.appendChild(createList);
+listAll.appendChild(createOtherList);
