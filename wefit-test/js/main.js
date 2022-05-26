@@ -10,3 +10,14 @@ buttonMenu.forEach(buttonAssistant => {
   buttonAssistant.style.borderRadius = '6px';
   buttonAssistant.style.marginRight = '4px';
 });
+
+
+// Header
+const headerContainer = document.getElementsByClassName("jumbotron")[0];
+headerContainer.style.textAlign = 'right';
+headerContainer.style.backgroundColor = '#6c757d';
+headerContainer.style.color = 'white';
+
+const buttonMore = headerContainer.getElementsByTagName("a")[0];
+buttonMore.style.backgroundColor = '#27a844';
+buttonMore.style.border = 'none';
